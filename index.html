@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Series de Fibonacci</title>
+</head>
+ 
+<body>
+ 
+    <script>
+    function fibonacci(numero)
+    {
+        let numeros=[0,1];
+        for (let i = 2; i < numero; i++) {
+            numeros[i] = numeros[i - 2] + numeros[i - 1];
+        }
+        return numeros;
+    }
+    document.write(fibonacci(5));//aqui se pone el valor que queremos que halle el fibonacci
+    </script>
+ 
+</body>
+</html>
